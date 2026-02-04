@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="bg-hearts" aria-hidden="true"></div>
+
+    <main class="page">
+      <header class="top">
+        <div class="badge">❤️ Valentine Message</div>
+        <h1>Hi my love</h1>
+      </header>
+
+      <section class="letter card">
+        <h2>My letter to you</h2>
+
+        <p>Hey love,</p>
+        <p>
+          I just wanted to tell you how much I love you. You make my days
+          brighter and my life better in ways I didn’t even know I needed.
+        </p>
+        <p>
+          I love your smile, your energy, your heart, and the way you make even
+          normal moments feel special.
+        </p>
+        <p>Thank you for being you — and for being with me.</p>
+        <p class="sig">
+          Always yours,<br />
+          <span>— Yuval ❤️</span>
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="question card-mini" id="question">
+          <h3>Will you be my Valentine?</h3>
+
+          <div class="buttons">
+            <a class="btn yes" href="yes.html">Yes 💘</a>
+
+            <!-- Full area where the No can teleport -->
+            <div class="teleport-area" id="teleportArea" aria-hidden="true">
+              <!-- Invisible hitbox (bigger than the button) -->
+              <div class="no-hitbox" id="noHitbox"></div>
+
+              <!-- The actual No button -->
+              <button class="btn no" id="noBtn" type="button">No 🙃</button>
+            </div>
+          </div>
+
+          <p class="tiny">Try to click “No” 😄</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Made with ❤️</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

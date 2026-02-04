@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YAY!! 💖</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="yes-body">
+    <div class="bg-hearts" aria-hidden="true"></div>
+
+    <main class="page center">
+      <section class="card big-card">
+        <div class="big-heart" aria-hidden="true">💖</div>
+        <h1>YAY!!</h1>
+        <p class="sub">You just made me the happiest person 🥹</p>
+
+        <div class="mini-row">
+          <span class="pill">Happy Valentine’s Day</span>
+          <span class="pill">My favorite person</span>
+          <span class="pill">Forever us</span>
+        </div>
+
+        <a class="btn yes" href="index.html">Replay ✨</a>
+      </section>
+    </main>
+
+    <div class="float-layer" id="floatLayer" aria-hidden="true"></div>
+
+    <script>
+      // Cute floating hearts
+      const layer = document.getElementById("floatLayer");
+      const icons = ["💗", "💖", "💘", "💕", "❤️", "💝"];
+      const count = 22;
+
+      for (let i = 0; i < count; i++) {
+        const s = document.createElement("span");
+        s.className = "float";
+        s.textContent = icons[Math.floor(Math.random() * icons.length)];
+        s.style.left = Math.random() * 100 + "vw";
+        s.style.animationDelay = Math.random() * 2 + "s";
+        s.style.animationDuration = 5 + Math.random() * 4 + "s";
+        s.style.fontSize = 16 + Math.random() * 22 + "px";
+        layer.appendChild(s);
+      }
+    </script>
+  </body>
+</html>
